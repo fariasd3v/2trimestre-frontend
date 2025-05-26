@@ -11,56 +11,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="C:\Users\Visitante\Desktop\listaExercircios\estilo.css">
+    <link rel="stylesheet" href="estilo.css">
     
     <style> 
     body {
   font-family: "Bodoni Moda", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: <bold>;
   font-style: normal;
 
 
-        background: radial-gradient(circle, #2b2f77 0%, #141852 50%, #070b34 100%);
+        background: radial-gradient(circle, #2b2f77 25%, #141852 50%, #070b34 100%);
         color: white;
     }
 
-/* Correção do fechamento da chave e definição correta das cores */
+/* ALTERA COR DOS CABELHAÇOS H1,H2,H5 */
 h1, h2, h5 {
     color: white;
 }
+/* TODO TEXTO QUE NAO TIVER NAS OUTRAS CONFIGURAÇÕES TEM ESSA COR AQUI */
 
 .text-muted {
     color: #f8f9fa !important;
 }
-
+/* ALTERA O HEADER O 'SUMMIT GRANDAO PRINCIPAL' */
 header {
     font-family: "Bungee Shade", cursive;
-    background-color: #1c0841;
+    background-color: #160041;
 }
+/* TEXTO DOS PALESTRANTES */
+
 .palestrante-descricao {
     font-size: 18px;
     line-height: 1.6;
-    text-align: justify;
+    text-align: center;
     color: #f8f9fa; /* Cinza claro */
     padding: 10px;
     border-left: 4px solid #4d194d; /* Barra lateral para destaque */
 }
+/* GAMBIARRA */
+
 h1 {
     font-family: "Bungee Shade", cursive;
 }
+/* BOTAO DE INSCREVA-SE */
 
 .btn-custom {
-    background-color: #f3f3f3; /* Roxo escuro */
-    color: rgb(68, 4, 102);
-    border: white;   
-    padding: 20px 15px;
-    border-radius: 45px;
+    font-size: 30px;
+    background-color: #141347; /* Roxo escuro */
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255);   
+    padding: 10px 11px;
+    border-radius: 75px;
 }
 
 .btn-custom:hover {
-    background-color: #312244; /* Tom mais escuro no hover */
+    background-color: #312244; 
 }
 
     </style>
@@ -74,72 +80,71 @@ h1 {
     <h1 class="display-4">TechFuture Summit Salvador 2025</h1></header>
 <!-- SEÇÃO DO EVENTO COM INFORMAÇÕES / LOCAL / RESUMO / TEMA -->
  <section class="container my-5">
-<center><h1 class="text-center mb-4">Sobre o Evento</h1> 
+<center>
+    
     <button id="scrollToBottom" class="btn-custom">Inscreva-se!</button></center>
 
-<br><p class="lead text-justify"><b>Prepare-se para o futuro da internet no Web Summit Salvador 2025!<br></p></b>
+<br><h3><p class="lead text-center"><b>Prepare-se para o futuro da internet no TechFuture Summit Salvador 2025!<br></p></b>
  <b>O principal encontro de mentes inovadoras no coração da Bahia!<br></b>
 <br>
-<p><strong>Data: </strong>  17 de Agosto de 2025<br></p>
+<p><strong>Data: </strong>  26 de Maio de 2025<br></p>
 
-<p ><strong>Local:</strong> Centro Universitário Jorge Amado - UNIJORGE – Salvador, Bahia<br><br>
+<p><strong>Local:</strong> Centro Universitário Jorge Amado - UNIJORGE – Salvador, Bahia<br><br>
 
-
-<h2><p>TechFuture Summit é um evento inovador dedicado às últimas tendências em tecnologia front-end.<br>
-Com foco em design responsivo, frameworks modernos e performance web, reúne especialistas para explorar soluções eficientes.<br>
-Os participantes terão acesso a palestras, workshops práticos e networking com profissionais do setor.<br>
-Abordaremos temas como React, Vue, Angular, acessibilidade e UX/UI.<br>
-Prepare-se para aprender, se conectar e impulsionar sua carreira na área de desenvolvimento front-end! 🚀
-</h2></p>
+<h1 class="text-center mb-4">Sobre o Evento</h1> 
+<h2><p>TechFuture Summit é um evento sobre tecnologia front-end, com palestras, workshops e networking, abordando temas como design responsivo, frameworks modernos e UX/UI.
+<br><p>O evento reúne especialistas e entusiastas para explorar tendências e soluções inovadoras. Uma oportunidade única para aprendizado e conexões profissionais.</p></h2></p>
 </section>
+<hr style="border: 2px solid white;">
 <!--SEÇÃO DOS PALESTRANTES NOME//  FOTO // BIOGRAFIA -->
-<section>
+<section class="container">
     <h1 class="text-center mb-5">Palestrantes</h1>
-    <article class="text-center">
+    <div class="row justify-content-center"> <!-- Alinhamento centralizado -->
+        
+        <div class="col-md-4 text-center"> <!-- div para cada palestrante separadamente -->
+            <h5 class="card-title">Linus Torvalds</h5>
+            <img src="https://i.blogs.es/70136e/linus/500_333.jpeg" class="rounded-circle    img-fluid" width="250" height="400" alt="Imagem circular">
+            <p class="palestrante-descricao">Linus Torvalds, engenheiro de software finlandês-americano, criou o kernel Linux em 1991.</p>
+        </div>
 
-    <img src="https://i.blogs.es/70136e/linus/500_333.jpeg" class="rounded-circle img-fluid"width="250"height="400" alt="Imagem circular">
+        <div class="col-md-4 text-center">
+            <h5 class="card-title">Vitalik Buterin</h5>
+            <img src="https://pbs.twimg.com/media/GrTW3D9WIAAjYHR?format=png" class="rounded-circle img-fluid" width="250" height="400" alt="Imagem circular">
+            <p class="palestrante-descricao">Vitalik Buterin, programador russo-canadense, co-fundou o Ethereum em 2013.</p>
+        </div>
 
-    <h5 class="card-title">Linus Torvalds</h5>
-    <p class="palestrante-descricao">Linus Torvalds é um engenheiro de software finlandês-americano, mundialmente reconhecido por ser o criador e principal desenvolvedor do kernel Linux. Sua iniciativa em 1991, de desenvolver um sistema operacional de código aberto, revolucionou a indústria da computação, pavimentando o caminho para o vasto ecossistema Linux que hoje sustenta desde smartphones (Android) e supercomputadores até servidores e sistemas embarcados.
+        <div class="col-md-4 text-center">
+            <h5 class="card-title">Alan Turing</h5>
+            <img src="https://www.emergentsoftware.net/media/diheu5bp/alan-turing-and-turing-machine.jpg" class="rounded-circle img-fluid" width="250" height="400" alt="Imagem circular">
+            <p class="palestrante-descricao">Alan Turing, matemático britânico, criador da "Máquina de Turing", base dos computadores modernos.</p>
+        </div>
 
-Torvalds é conhecido por sua abordagem pragmática e sua gestão da comunidade de desenvolvedores do Linux.</p>
-        </article>
-        <hr>
-    </article>
-    </article>
-    <article>
-                <div class="text-center">
-    <img src="https://pbs.twimg.com/media/GrTW3D9WIAAjYHR?format=png" class="rounded-circle img-fluid"width="250"height="400" alt="Imagem circular">
-
-        <h4 class="card-title">Vitalik Buterin</h4>
-        <p class="palestrante-descricao">
-            Vitalik Buterin é um programador e escritor russo-canadense, amplamente reconhecido como o co-fundador da plataforma Ethereum. Ele concebeu o conceito de Ethereum em 2013, propondo uma blockchain não apenas para transações de criptomoedas, mas também para hospedar aplicações descentralizadas (dApps) e contratos inteligentes. Sua visão transformou significativamente o espaço das criptomoedas e da tecnologia blockchain, influenciando o desenvolvimento de finanças descentralizadas (DeFi), NFTs e outras inovações tecnológicas.
-            </p>
-    </article>
-    <hr>
-    <article>
-                <div class="text-center">
-    <img src="https://www.emergentsoftware.net/media/diheu5bp/alan-turing-and-turing-machine.jpg" class="rounded-circle img-fluid"width="250"height="400" alt="Imagem circular">
-
-        <h4 class="card-title">Alan Turing</h4>
-      <p class="palestrante-descricao">
-            
-           Alan Turing foi um matemático, lógico, cientista da computação e criptoanalista britânico, amplamente considerado o "pai da ciência da computação teórica e da inteligência artificial". Durante a Segunda Guerra Mundial, Turing desempenhou um papel crucial ao decifrar códigos da máquina Enigma alemã, uma contribuição que teve impacto significativo no conflito. Ele também formalizou os conceitos de algoritmo e computação com a "Máquina de Turing", uma base para o desenvolvimento dos computadores modernos, e propôs o "Teste de Turing" como um critério para a inteligência artificial. 
-
-        </p>
-</div>
-
-    </article>
-    <hr>
+    </div>
 </section>
-<!--FORMULARIO DE INSCRIÇÃO-->
 
-
+<!--TIPO DE INGRESSO-->
 
 <div class="container text-center">
-        <h2><b>Inscrição Tech Future Summit</b></h2> <br><br>
+        <h2><b>Inscreva-se!</b></h2> <br><br>
+        <div class="container mt-4">
+    <h4 class="mb-3">Selecione o tipo de ingresso:</h4> <!-- Adicionado espaçamento abaixo -->
+    
+    <div class="d-flex flex-column align-items-center">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipo_ingresso" id="presencial" value="Presencial" checked>
+            <label class="form-check-label" for="presencial">Presencial</label>
+        </div>
+
+        <div class="form-check mt-2">
+            <input class="form-check-input" type="radio" name="tipo_ingresso" id="online" value="Online">
+            <label class="form-check-label" for="online">Online</label>
+        </div>
+    </div>
+</div>
+
       </div>
       <center> 
+        
         <!--FORMULARIO USANDO API DA SHEET MONKEY-->
         <form id="meuFormulario" action="https://api.sheetmonkey.io/form/omUZ3jwaJ6Kvcs3uwEKThM" method="POST">
             <label>Nome</label>
@@ -150,39 +155,35 @@ Torvalds é conhecido por sua abordagem pragmática e sua gestão da comunidade 
 
             <div class="form-group">
                 <label for="exampleInputEmail1">E-mail</label>
-                <input type="email" id="email" name="email" required>
-                <small id="email" class="form-text text-muted">Nunca vamos compartilhar seu email com ninguém.</small>
+                <input type="email" id="email" name="email" required><br>
+                <small id="email" class="form-text text-muted">Não compartilharemos suas informações pessoais.</small>
             </div>
+<br>
 
-            <label>Tipo de ingresso:</label><br>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo_ingresso" value="Presencial" checked>
-                <label class="form-check-label">Presencial</label>
-            </div>
+      
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="tipo_ingresso" value="Online">
-                <label class="form-check-label">Online</label>
+    
+
             </div> <br>
 
             <fieldset style="max-width: 400px; border: 1px solid #ccc; padding: 10px;">
                 <legend>Termos e Condições</legend>
                 <ul>
-                    <li>A inscrição garante acesso exclusivo ao evento na modalidade escolhida.</li>
-                    <li>É proibido compartilhar o link de acesso (modalidade online).</li>
+                    
                     <li>A programação pode sofrer alterações sem aviso prévio.</li>
                     <li>Presença poderá ser registrada para certificação.</li>
                     <li>O uso de imagem em fotos e gravações está autorizado.</li>
                     <li>Seus dados serão usados apenas para fins organizacionais.</li>
                 </ul>
             </fieldset><br>
+                <!--  CHECKBOX DOS TERMOS E CONDIÇÕES-->
 
             <input type="checkbox" id="termos" name="termos" value="aceito" required>
             <label for="termos">Li e aceito os termos e condições do evento.</label><br><br>
-
+            <!--BOTAO DE FINALIZAR-->
             <button type="submit" class="btn btn-lg btn-dark btn-block">Finalizar</button>
         </form>
-
+        <!--MENSAGEM DE CONFIRMAÇÃO APÓS FINALIZAR-->
         <div id="mensagemConfirmacao" style="display: none; color: green; font-weight: bold;">
             ✅ Inscrição Confirmada!
             </center>
@@ -190,6 +191,8 @@ Torvalds é conhecido por sua abordagem pragmática e sua gestão da comunidade 
         </div>
     </div>
     <script>
+        /* script pra enviar o formulario e fazer a validação */
+
         document.getElementById("meuFormulario").addEventListener("submit", function(event) {
             event.preventDefault(); // Impede o envio tradicional
             document.getElementById("mensagemConfirmacao").style.display = "block"; // Exibe mensagem
@@ -199,9 +202,11 @@ Torvalds é conhecido por sua abordagem pragmática e sua gestão da comunidade 
     
     
     <script>
+        /* SCRIPT PARA DESCER A PAGINA ATÉ O FORMULARIO DE INSCRIÇÃO */
+
     document.getElementById("scrollToBottom").addEventListener("click", function() {
         window.scrollTo({ top   : document.body.scrollHeight, behavior: "smooth" });
     });
 </script>
 </body>
-</html>
+</html> 
