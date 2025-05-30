@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--HEAD CONTENDO AS FONTES USADAS E A API DO BOOTSTRAP-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    
+    <style> 
+    body {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: italic;
+  font-style: normal;
+
+
+        background: radial-gradient(#240046 50%,#3c096c 80%, #5a189a 1000%,#800e13 100%);
+        color: white;
+    }
+
+
+
+/*altera cor do cabeçalho h1,h5*/
+h1,h5 {
+    color: rgb(234, 225, 240);
+}
+/* TODO TEXTO QUE NAO TIVER NAS OUTRAS CONFIGURAÇÕES TEM ESSA COR AQUI */
+
+.text-muted {
+    color: #555d64 !important;
+}
+/* ALTERA O HEADER O 'SUMMIT GRANDAO PRINCIPAL' */
+header {
+    font-family: "Bungee Shade", cursive;
+    background-color: #261353;
+}
+/* TEXTO DOS PALESTRANTES */
+
+.palestrante-descricao {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #f8f9fa; /* Cinza claro */
+    padding: 10px;
+    border-left: 4px solid #ffffff; /* Barra lateral para destaque */
+}
+/* GAMBIARRA */
+
+h1 {
+    font-family: "Bungee Shade", cursive;
+}
+
+h2,h3 {
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+} 
+
+/* BOTAO DE INSCREVA-SE */
+
+.btn-custom {
+    font-size: 30px;
+    background-color: #141347; /* Roxo escuro */
+    color: rgb(167, 144, 144);
+    border: rgb(255, 255, 255);   
+    padding: 10px 11px;
+    border-radius: 75px;
+}
+
+.btn-custom:hover {
+    background-color: #312244; 
+}
+
+    </style>
+    
+    <title>TechFuture Summit 2025</title>
+</head>
+
+<!--fundo gradiente personalizado, tirado do coolors -->
+<body class="bg-gradient-custom">
+<header class="text-center py-4 bg-purple text-white">
+    <h1 class="display-4">TechFuture Summit Salvador 2025</h1></header>
+<!-- SEÇÃO DO EVENTO COM INFORMAÇÕES / LOCAL / RESUMO / TEMA -->
+ <section class="container my-5">
+<center>
+    
+
+    <button id="scrollToBottom" class="btn-custom">Inscreva-se!</button></center>
+
+<br><h3><p class="lead text-center"><b>Prepare-se para o futuro da internet no TechFuture Summit Salvador 2025!<br></p></b>
+ <b>O principal encontro de mentes inovadoras no coração da Bahia!<br></b>
+<br>
+<p><strong>Data: </strong>  26 de Maio de 2025<br></p>
+
+<p><strong>Local:</strong> Centro Universitário Jorge Amado - UNIJORGE – Salvador, Bahia<br><br>
+
+<p class="text-center mb-4">Sobre o Evento</p> 
+<h2>TechFuture Summit é um evento sobre tecnologia front-end, com palestras, workshops e networking!<br>Abordando temas como design responsivo, frameworks modernos e UX/UI,
+<br>O evento reúne especialistas e entusiastas para explorar tendências e soluções inovadoras. Uma oportunidade única para aprendizado e conexões profissionais.</h2>
+</section>
+<hr style="border: 2px solid white;">
+<!--SEÇÃO DOS PALESTRANTES NOME//  FOTO // BIOGRAFIA -->
+<section class="container">
+    <p class="text-center mb-5">Palestrantes</p>
+    <div class="row justify-content-center"> <!-- Alinhamento centralizado -->
+        
+        <div class="col-md-4 text-center"> <!-- div para cada palestrante separadamente -->
+            <h5 class="card-title">Linus Torvalds</h5>
+            <img src="https://i.blogs.es/70136e/linus/500_333.jpeg" class="rounded-circle    img-fluid" width="250" height="400" alt="Imagem circular">
+            <p class="palestrante-descricao">Linus Torvalds, engenheiro de software finlandês-americano, criou o kernel Linux em 1991.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <h5 class="card-title">Vitalik Buterin</h5>
+            <img src="https://pbs.twimg.com/media/GrTW3D9WIAAjYHR?format=png" class="rounded-circle img-fluid" width="250" height="400" alt="Imagem circular">
+            <p class="palestrante-descricao">Vitalik Buterin, programador russo-canadense, co-fundou o Ethereum em 2013.</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <h5 class="card-title">Alan Turing</h5>
+            <img src="https://www.emergentsoftware.net/media/diheu5bp/alan-turing-and-turing-machine.jpg" class="rounded-circle img-fluid" width="250" height="400" alt="Imagem circular">
+            <p class="palestrante-descricao">Alan Turing, matemático britânico, criador da "Máquina de Turing", base dos computadores modernos.</p>
+        </div>
+
+    </div>
+</section>
+
+<!--TIPO DE INGRESSO-->
+
+<div class="container text-center">
+        <h2><b>Inscreva-se!</b></h2> <br><br>
+        <div class="container mt-4">
+    <h4 class="mb-3">Selecione o tipo de ingresso:</h4> <!-- Adicionado espaçamento abaixo -->
+    
+    <div class="d-flex flex-column align-items-center">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipo_ingresso" id="presencial" value="Presencial" checked>
+            <label class="form-check-label" for="presencial">Presencial</label>
+        </div>
+
+        <div class="form-check mt-2">
+            <input class="form-check-input" type="radio" name="tipo_ingresso" id="online" value="Online">
+            <label class="form-check-label" for="online">Online</label>
+        </div>
+    </div>
+</div>
+
+      </div>
+      <center> 
+        
+        <!--FORMULARIO USANDO API DA SHEET MONKEY-->
+        <form id="meuFormulario" action="https://api.sheetmonkey.io/form/omUZ3jwaJ6Kvcs3uwEKThM" method="POST">
+            <label>Nome</label>
+            <input type="text" name="nome" required placeholder="Seu Nome"> <br><br>
+
+            <label>CPF</label>
+            <input type="tel" name="cpf" maxlength="11" required placeholder="Seu CPF"> <br><br>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">E-mail</label>
+                <input type="email" id="email" name="email" required><br>
+                <small id="email" class="form-text text-muted">Não compartilharemos suas informações pessoais.</small>
+            </div>
+<br>
+
+      
+
+    
+
+            </div> <br>
+
+            <fieldset style="max-width: 400px; border: 1px solid #ccc; padding: 10px;">
+                <legend>Termos e Condições</legend>
+                <ul>
+                    
+                    <li>A programação pode sofrer alterações sem aviso prévio.</li>
+                    <li>Presença poderá ser registrada para certificação.</li>
+                    <li>O uso de imagem em fotos e gravações está autorizado.</li>
+                    <li>Seus dados serão usados apenas para fins organizacionais.</li>
+                </ul>
+            </fieldset><br>
+                <!--  CHECKBOX DOS TERMOS E CONDIÇÕES-->
+
+            <input type="checkbox" id="termos" name="termos" value="aceito" required>
+            <label for="termos">Li e aceito os termos e condições do evento.</label><br><br>
+            <!--BOTAO DE FINALIZAR-->
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Finalizar</button>
+        </form>
+        <!--MENSAGEM DE CONFIRMAÇÃO APÓS FINALIZAR-->
+        <div id="mensagemConfirmacao" style="display: none; color: green; font-weight: bold;">
+            ✅ Inscrição Confirmada!
+            </center>
+
+        </div>
+    </div>
+    <script>
+        /* script pra enviar o formulario e fazer a validação */
+
+        document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio tradicional
+            document.getElementById("mensagemConfirmacao").style.display = "block"; // Exibe mensagem
+            setTimeout(() => { this.submit(); }, 5000); // Envia após 2 segundos
+        });
+    </script>
+    
+    
+    <script>
+        /* SCRIPT PARA DESCER A PAGINA ATÉ O FORMULARIO DE INSCRIÇÃO */
+
+    document.getElementById("scrollToBottom").addEventListener("click", function() {
+        window.scrollTo({ top   : document.body.scrollHeight, behavior: "smooth" });
+    });
+</script>
+</body>
+</html> 
